@@ -16,15 +16,15 @@ use txs::tx_params::TxParams;
 
 use crate::{carpe_error::CarpeError, key_manager};
 
-static HOME_DIR: &str = ".0L";
+static HOME_DIR: &str = ".0L_CANARY";
 static APP_CONFIG_FILE: &str = "0L.toml";
-
 static ACCOUNTS_DB_FILE: &str = "accounts.json";
 static ACCOUNTS_DB_FILE_REX_TESTNET: &str = "accounts-rex-testnet.json";
 static ACCOUNTS_DB_FILE_SWARM_DEVNET: &str = "accounts-swarm-devnet.json";
 
 // get the config path for files
 pub fn default_config_path() -> PathBuf {
+  // THIS IS MODIFIED FOR CANARY, DO NOT OVERWRITE
   dirs::home_dir().unwrap().join(HOME_DIR).join(APP_CONFIG_FILE)
 }
 
