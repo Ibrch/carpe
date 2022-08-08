@@ -14,7 +14,7 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://raw.githubusercontent.com/OLSF/carpe/main/autoupdater/autoupdater_payload.json"
+        "https://raw.githubusercontent.com/OLSF/carpe/main/autoupdater/autoupdater_payload_canary.json"
       ],
       "dialog": true
     },
